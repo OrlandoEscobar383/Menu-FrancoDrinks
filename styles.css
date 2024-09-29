@@ -1,0 +1,49 @@
+/* Estilos generales para pantallas grandes (escritorio, tabletas) */
+body {
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    margin: 20px;
+}
+
+h1 {
+    font-size: 2em;
+    color: #333;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Media Query para pantallas de teléfonos (ancho máximo de 768px) */
+@media only screen and (max-width: 768px) {
+    body {
+        font-size: 14px; /* Reduce el tamaño del texto */
+        margin: 10px; /* Margen más pequeño */
+    }
+
+    h1 {
+        font-size: 1.5em; /* Reduce el tamaño de los títulos */
+    }
+
+    .container {
+        width: 100%; /* Aumenta el ancho del contenedor al 100% */
+        margin: 0; /* Elimina márgenes exteriores */
+        padding: 10px; /* Agrega un pequeño relleno interno */
+    }
+
+    button {
+        width: 100%; /* Botones ocupan todo el ancho */
+        padding: 15px; /* Botones más grandes para facilitar el toque en pantallas táctiles */
+    }
+}
+
