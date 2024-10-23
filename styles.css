@@ -1,8 +1,52 @@
 /* Estilos generales para pantallas grandes (escritorio, tabletas) */
+@font-face {
+    font-family: "urwgroteskscreg";
+    src: url("font/urwgroteskscreg.ttf") format("truetype");
+}
+
+html {
+    height: 100%;
+    color: white;
+    text-shadow: 0 0 10px white; 
+}
+
 body {
-    font-family: Arial, sans-serif;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: "urwgroteskscreg", Arial, sans-serif;
+    background-image: url("fondo_menu.jpeg");
+    background-size: cover;
+    background-position: center 20px; /* Desplaza la imagen hacia abajo 20px */
+    background-repeat: no-repeat;
+    background-attachment: fixed;
     font-size: 16px;
-    margin: 20px;
+}
+
+.edit-menu {
+    text-align: center;
+    color: red;
+    text-shadow: 0 0 5px white;
+    font-size: 40px;
+}
+
+/* Ajustes de textos */
+.nombre {
+    text-align: left;
+    margin-left: 70px;
+    font-size: 30px;
+}
+
+.precio {
+    text-align: right;
+    margin-right: 90px;
+    font-size: 25px;
+    text-shadow: 0 0 6px white;
+}
+
+.descripcion {
+    font-size: large;
+    margin-left: 130px;
 }
 
 h1 {
@@ -10,40 +54,39 @@ h1 {
     color: #333;
 }
 
-.container {
-    width: 80%;
-    margin: 0 auto;
-}
-
-button {
-    padding: 10px 20px;
-    background-color: #4CAF50;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-}
-
-/* Media Query para pantallas de teléfonos (ancho máximo de 768px) */
+/* Estilos específicos para móviles */
 @media only screen and (max-width: 768px) {
     body {
-        font-size: 14px; /* Reduce el tamaño del texto */
-        margin: 10px; /* Margen más pequeño */
+        font-size: 14px;
     }
 
     h1 {
-        font-size: 1.5em; /* Reduce el tamaño de los títulos */
+        font-size: 1.5em;
     }
 
-    .container {
-        width: 100%; /* Aumenta el ancho del contenedor al 100% */
-        margin: 0; /* Elimina márgenes exteriores */
-        padding: 10px; /* Agrega un pequeño relleno interno */
+    .nombre {
+        margin-left: 20px;
+        font-size: 24px;
+        color: red;
     }
 
-    button {
-        width: 100%; /* Botones ocupan todo el ancho */
-        padding: 15px; /* Botones más grandes para facilitar el toque en pantallas táctiles */
+    .precio {
+        margin-right: 20px;
+        font-size: 20px;
+    }
+
+    .descripcion {
+        margin-left: 50px;
+        font-size: 16px;
     }
 }
 
+
+hr {
+    border-color: white;
+    margin-bottom: 30px;
+    size: 30px;
+}
+footer {
+    text-align: center;
+}
