@@ -62,6 +62,7 @@ h1 {
 /* Ajustes para móviles */
 @media only screen and (max-width: 768px) {
     body {
+        margin-top: 100px;
         font-size: 14px;
     }
 
@@ -71,17 +72,17 @@ h1 {
 
     .nombre {
         margin-left: 20px;
-        font-size: 1.5rem; /* Escala el tamaño de fuente en móviles */
+        font-size: 1rem; /* Escala el tamaño de fuente en móviles */
     }
 
     .precio {
         margin-right: 20px;
-        font-size: 1.25rem;
+        font-size: 1.10rem;
     }
 
     .descripcion {
         margin-left: 30px;
-        font-size: 1rem;
+        font-size: 0.90rem;
     }
 }
 
