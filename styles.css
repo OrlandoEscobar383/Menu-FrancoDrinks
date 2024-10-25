@@ -1,93 +1,97 @@
-/* Estilos generales para pantallas grandes (escritorio, tabletas) */
+/* Asegurarse de que el html y el body ocupen toda la pantalla */
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    color: white;
+    text-shadow: 0 0 10px white;
+    overflow-x: hidden; /* Previene el desbordamiento horizontal */
+}
+
+/* Carga de la fuente */
 @font-face {
     font-family: "urwgroteskscreg";
     src: url("font/urwgroteskscreg.ttf") format("truetype");
 }
 
-html {
-    height: 100%;
-    color: white;
-    text-shadow: 0 0 10px white; 
-}
-
+/* Estilos para el cuerpo del documento */
 body {
-    height: 100%;
-    margin: 0;
-    padding: 0;
     font-family: "urwgroteskscreg", Arial, sans-serif;
     background-image: url("fondo_menu.jpeg");
     background-size: cover;
-    background-position: center 20px; /* Desplaza la imagen hacia abajo 20px */
+    background-position: center; /* Asegura que el fondo esté centrado */
     background-repeat: no-repeat;
-    background-attachment: fixed;
+    background-attachment: fixed; /* Fija el fondo para que no desaparezca al hacer scroll */
     font-size: 16px;
+    margin: 0;
 }
 
+/* Título principal del menú */
 .edit-menu {
     text-align: center;
     color: red;
     text-shadow: 0 0 5px white;
-    font-size: 40px;
+    font-size: 2.5rem; /* Usa rem para ajustar automáticamente en móviles */
 }
 
-/* Ajustes de textos */
+/* Ajustes de textos en pantallas grandes */
 .nombre {
     text-align: left;
     margin-left: 70px;
-    font-size: 30px;
+    font-size: 1.875rem; /* Usa rem */
     color: red;
 }
 
 .precio {
     text-align: right;
     margin-right: 90px;
-    font-size: 25px;
+    font-size: 1.5625rem; /* Usa rem */
     text-shadow: 0 0 6px white;
 }
 
 .descripcion {
-    font-size: large;
+    font-size: 1.125rem; /* Usa rem */
     margin-left: 130px;
 }
 
 h1 {
-    font-size: 2em;
+    font-size: 2rem;
     color: #333;
 }
 
-/* Estilos específicos para móviles */
+/* Ajustes para móviles */
 @media only screen and (max-width: 768px) {
     body {
         font-size: 14px;
     }
 
-    h1 {
-        font-size: 1.5em;
+    .edit-menu {
+        font-size: 2rem; /* Ajuste del tamaño de la fuente */
     }
 
     .nombre {
         margin-left: 20px;
-        font-size: 24px;
-        color: red;
+        font-size: 1.5rem; /* Escala el tamaño de fuente en móviles */
     }
 
     .precio {
         margin-right: 20px;
-        font-size: 20px;
+        font-size: 1.25rem;
     }
 
     .descripcion {
         margin-left: 50px;
-        font-size: 16px;
+        font-size: 1rem;
     }
 }
 
-
+/* Estilo de las líneas de separación */
 hr {
     border-color: white;
     margin-bottom: 30px;
-    size: 30px;
 }
+
+/* Estilos para el pie de página */
 footer {
     text-align: center;
 }
