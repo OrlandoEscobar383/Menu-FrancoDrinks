@@ -62,7 +62,7 @@ h1 {
 /* Ajustes para móviles */
 @media only screen and (max-width: 768px) {
     body {
-        margin-top: 100px;
+        margin-top: 180px;
         font-size: 14px;
     }
 
