@@ -80,15 +80,9 @@ h1 {
     }
 
     .descripcion {
-        margin-left: 50px;
+        margin-left: 30px;
         font-size: 1rem;
     }
-}
-
-/* Estilo de las líneas de separación */
-hr {
-    border-color: white;
-    margin-bottom: 30px;
 }
 
 /* Estilos para el pie de página */
