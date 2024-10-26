@@ -39,8 +39,8 @@ body {
     text-align: left;
     margin-left: 70px;
     font-size: 1.875rem; /* Usa rem */
-    text-shadow: 0 0 5px red;
-    color: red;
+    text-shadow: 0 0 5px white;
+    color: white;
 }
 
 .precio {
@@ -91,4 +91,5 @@ h1 {
 /* Estilos para el pie de página */
 footer {
     text-align: center;
+    font-size: 1.1rem;
 }
