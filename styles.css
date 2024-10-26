@@ -74,7 +74,7 @@ h1 {
 
     .nombre {
         margin-left: 20px;
-        font-size: 1rem; /* Escala el tamaño de fuente en móviles */
+        font-size: 1.2rem; /* Escala el tamaño de fuente en móviles */
     }
 
     .precio {
