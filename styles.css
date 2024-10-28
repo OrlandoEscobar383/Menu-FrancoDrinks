@@ -67,6 +67,13 @@ h1 {
         font-size: 14px;
     }
 
+    hr {
+        margin-left: 4rem;
+        margin-right: 4rem;
+        color: white;
+        text-shadow: 0 0 6px white;
+    }
+
     .edit-menu {
         margin-top: 40px;
         margin-bottom: 40px;
@@ -75,12 +82,14 @@ h1 {
     }
 
     .nombre {
+        margin-top: 3rem;
         margin-left: 20px;
         font-size: 1.2rem; /* Escala el tamaño de fuente en móviles */
     }
 
     .precio {
-        margin-right: 20px;
+        margin-bottom: 2rem;
+        margin-right: 5rem;
         font-size: 1.10rem;
     }
 
