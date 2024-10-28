@@ -68,9 +68,11 @@ h1 {
     }
 
     hr {
-        margin-left: 4rem;
-        margin-right: 4rem;
-        color: white;
+        border: none;
+        background-color: white;
+        height: 2px;
+        margin-left: 3rem;
+        margin-right: 3rem;
         text-shadow: 0 0 6px white;
     }
 
@@ -82,8 +84,9 @@ h1 {
     }
 
     .nombre {
-        margin-top: 3rem;
-        margin-left: 20px;
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+        margin-left: 3rem;
         font-size: 1.2rem; /* Escala el tamaño de fuente en móviles */
     }
 
