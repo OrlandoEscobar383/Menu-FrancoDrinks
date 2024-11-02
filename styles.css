@@ -73,12 +73,6 @@ h1 {
         text-shadow: 0 0 6px white;
     }
 
-    .edit-menu {
-        margin-top: 40px;
-        margin-bottom: 40px;
-        font-size: 1rem;
-        background-attachment: fixed; /* Fija el fondo para que no desaparezca al hacer scroll */
-    }
 
     .nombre {
         margin-top: 1rem;
