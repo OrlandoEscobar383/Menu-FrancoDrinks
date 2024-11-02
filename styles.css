@@ -1,4 +1,3 @@
-/* Asegurarse de que el html y el body ocupen toda la pantalla */
 html, body {
     height: 100%;
     margin: 0;
@@ -8,7 +7,6 @@ html, body {
     overflow-x: hidden; /* Previene el desbordamiento horizontal */
 }
 
-/* Carga de la fuente */
 @font-face {
     font-family: "urwgroteskscreg";
     src: url("font/urwgroteskscreg.ttf") format("truetype");
@@ -26,19 +24,17 @@ body {
     margin: 0;
 }
 
-/* Título principal del menú */
 .edit-menu {
     text-align: center;
     color: red;
     text-shadow: 0 0 5px white;
-    font-size: 2.5rem; /* Usa rem para ajustar automáticamente en móviles */
+    font-size: 2.5rem;
 }
 
-/* Ajustes de textos en pantallas grandes */
 .nombre {
     text-align: left;
     margin-left: 70px;
-    font-size: 1.875rem; /* Usa rem */
+    font-size: 1.875rem;
     text-shadow: 0 0 5px white;
     color: white;
 }
@@ -46,12 +42,12 @@ body {
 .precio {
     text-align: right;
     margin-right: 90px;
-    font-size: 1.5625rem; /* Usa rem */
+    font-size: 1.5625rem;
     text-shadow: 0 0 6px white;
 }
 
 .descripcion {
-    font-size: 1.125rem; /* Usa rem */
+    font-size: 1.125rem;
     margin-left: 130px;
 }
 
@@ -60,8 +56,9 @@ h1 {
     color: #333;
 }
 
-/* Ajustes para móviles */
-@media only screen and (max-width: 768px) {
+
+@media screen and (min-width: 320px) and (max-width: 490px) {
+    
     body {
         margin-top: 170px;
         font-size: 14px;
@@ -79,7 +76,7 @@ h1 {
     .edit-menu {
         margin-top: 40px;
         margin-bottom: 40px;
-        font-size: 1rem; /* Ajuste del tamaño de la fuente */
+        font-size: 1rem;
         background-attachment: fixed; /* Fija el fondo para que no desaparezca al hacer scroll */
     }
 
@@ -102,7 +99,6 @@ h1 {
     }
 }
 
-/* Estilos para el pie de página */
 footer {
     text-align: center;
     font-size: 1.1rem;
