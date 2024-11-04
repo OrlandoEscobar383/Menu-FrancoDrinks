@@ -43,13 +43,19 @@ html, body {
         display: flex; /* Utiliza flexbox para la alineación de los elementos de la lista */
         justify-content: space-between; /* Espacio entre el nombre de la bebida y el precio */
         align-items: center; /* Alinea verticalmente los elementos en el centro */
-        padding: 0.625rem 0; /* Espaciado vertical entre los ítems (10px) */
+        padding: 0.625rem 0;
+        margin-left: 3rem;
+        margin-right: 3rem;
+    }
+
+    .price {
+        align-items: left;
     }
 
     hr {
         border: none; /* Quita el borde predeterminado */
-        border-top: 1px solid #444; /* Borde superior de la línea horizontal */
-        margin: 0.625rem 0; /* Margen vertical de la línea horizontal (10px) */
+        border-top: 1px solid white; /* Borde superior de la línea horizontal */
+        margin: 0.625rem 3rem 0 3rem; /* Margen vertical de la línea horizontal (10px) */
     }
 
     footer {
