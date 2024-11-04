@@ -24,11 +24,7 @@ html, body {
         font-size: 1rem; 
         margin: 0;
     }
-
-    #logo {
-        background-image: url(images/logo/logo.jpeg);
-    }
-
+    
     .header {
         height: 6.25rem;
         display: flex;
