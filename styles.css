@@ -15,7 +15,7 @@ html, body {
 /* Estilos para el cuerpo del documento */
 body {
     font-family: "urwgroteskscreg", Arial, sans-serif;
-    background-image: url("fondo_menu.jpeg");
+    background-image: url("images/fondo/fondo_menu.jpeg");
     background-size: cover;
     background-position: center; /* Asegura que el fondo esté centrado */
     background-repeat: no-repeat;
