@@ -17,6 +17,7 @@ html, body {
     body {
         font-family: "urwgroteskscreg", Arial, sans-serif;
         background-image: url("images/fondo/fondo_menu.jpeg");
+        background-image: 100%;
         background-size: cover;
         background-position: center; /* Asegura que el fondo esté centrado */
         background-repeat: no-repeat;
@@ -48,8 +49,12 @@ html, body {
         margin-right: 3rem;
     }
 
+    .drink-name {
+        text-shadow: 0.5rem white;
+    }
+
     .price {
-        align-items: left;
+        text-shadow: 0.5rem white;
     }
 
     hr {
