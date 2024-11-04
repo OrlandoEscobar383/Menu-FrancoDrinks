@@ -19,54 +19,49 @@ html, body {
         background-image: url("images/fondo/fondo_menu.jpeg");
         background-image: 100%;
         background-size: cover;
-        background-position: center; /* Asegura que el fondo esté centrado */
+        background-position: center;
         background-repeat: no-repeat;
-        background-attachment: fixed; /* Fija el fondo para que no desaparezca al hacer scroll */
-        font-size: 1rem; /* Equivalente a 16px */
+        background-attachment: fixed;
+        font-size: 1rem; 
         margin: 0;
     }
 
     .header {
-        height: 6.25rem; /* Ajusta según el tamaño de tu logo (100px) */
-        display: flex; /* Utiliza flexbox para alinear elementos */
-        justify-content: center; /* Centra horizontalmente el contenido del header */
-        align-items: center; /* Centra verticalmente el contenido del header */
-        margin-bottom: 1.25rem; /* Espacio debajo del header (20px) */
+        height: 6.25rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 1.25rem;
     }
 
     .list {
-        margin-top: 2.5rem; /* Espacio hacia abajo de la lista (40px) */
-        padding: 0; /* Elimina relleno de la lista */
-        list-style-type: none; /* Quita los puntos de la lista */
+        margin-top: 2.5rem;
+        padding: 0;
+        list-style-type: none;
+        text-shadow: 0 0 6px white;
     }
 
     .list li {
-        display: flex; /* Utiliza flexbox para la alineación de los elementos de la lista */
-        justify-content: space-between; /* Espacio entre el nombre de la bebida y el precio */
-        align-items: center; /* Alinea verticalmente los elementos en el centro */
+        display: flex; /* uso flexbox para alinear los elementos de la lista */
+        justify-content: space-between; /* Espacio entre el nombre del trago y el precio */
+        align-items: center;
         padding: 0.625rem 0;
         margin-left: 3rem;
         margin-right: 3rem;
-    }
-
-    .drink-name {
-        text-shadow: 0.5rem white;
-    }
-
-    .price {
-        text-shadow: 0.5rem white;
+        text-shadow: white;
     }
 
     hr {
-        border: none; /* Quita el borde predeterminado */
-        border-top: 1px solid white; /* Borde superior de la línea horizontal */
-        margin: 0.625rem 3rem 0 3rem; /* Margen vertical de la línea horizontal (10px) */
+        border: none;
+        border-top: 1px solid white;
+        margin: 0.625rem 3rem 0 3rem;
+        text-shadow: 0 0 6px white;
     }
 
     footer {
-        text-align: center; /* Centra el texto del footer */
-        font-size: 1.1rem; /* Tamaño de fuente del footer */
-        margin-top: 1.25rem; /* Espacio superior del footer (20px) */
+        text-align: center;
+        font-size: 1.1rem;
+        margin-top: 1.25rem;
     }
 
 }
