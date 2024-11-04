@@ -24,38 +24,6 @@ body {
     margin: 0;
 }
 
-.edit-menu {
-    text-align: center;
-    color: red;
-    text-shadow: 0 0 5px white;
-    font-size: 2.5rem;
-}
-
-.nombre {
-    text-align: left;
-    margin-left: 70px;
-    font-size: 1.875rem;
-    text-shadow: 0 0 5px white;
-    color: white;
-}
-
-.precio {
-    text-align: right;
-    margin-right: 90px;
-    font-size: 1.5625rem;
-    text-shadow: 0 0 6px white;
-}
-
-.descripcion {
-    font-size: 1.125rem;
-    margin-left: 130px;
-}
-
-h1 {
-    font-size: 2rem;
-    color: #333;
-}
-
 
 @media (min-width: 480px) and (max-width: 768px) {
     
@@ -65,8 +33,9 @@ h1 {
         background-attachment: fixed
     }
 
-    .lista {
+    .list {
         list-style-type: none;
+        padding: 0;
     }
     .container {
         display: flex;
@@ -84,23 +53,19 @@ h1 {
     }
 
 
-    .nombre {
+    .drink-name {
         margin-top: 1rem;
         margin-bottom: 1rem;
         margin-left: 3rem;
         font-size: 0.90rem;
     }
 
-    .precio {
+    .drink-price {
         margin-bottom: 2rem;
         margin-right: 5rem;
         font-size: 1.10rem;
     }
 
-    .descripcion {
-        margin-left: 30px;
-        font-size: 0.90rem;
-    }
 }
 
 footer {
