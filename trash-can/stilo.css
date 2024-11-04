@@ -1,116 +1,93 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    color: white;
+    text-shadow: 0 0 10px white;
+    overflow-x: hidden; /* Previene el desbordamiento horizontal */
+}
 
-/* Estilos generales para pantallas grandes (escritorio, tabletas) */
+.space {
+    margin-top: 50px;
+}
+
 @font-face {
     font-family: "urwgroteskscreg";
     src: url("font/urwgroteskscreg.ttf") format("truetype");
 }
-html {
-    color: white;
-    text-shadow: 0 0 10px white; 
-}
+
+/* Estilos para el cuerpo del documento */
 body {
-    background-color: #333;
     font-family: "urwgroteskscreg", Arial, sans-serif;
+    background-image: url("images/fondo/fondo_menu.jpeg");
+    background-size: cover;
+    background-position: center; /* Asegura que el fondo esté centrado */
+    background-repeat: no-repeat;
+    background-attachment: fixed; /* Fija el fondo para que no desaparezca al hacer scroll */
     font-size: 16px;
-    margin: 20px;
+    margin: 0;
 
+}
+
+
+@media (min-width: 480px) and (max-width: 768px) {
     
-}
-
-img {
-    width: 100%; /* ajusta el ancho a la pantalla */
-    height: auto; /* ajusta el alto automáticamente */
-    object-fit: cover; /* ajusta la imagen para cubrir el contenedor */
-    background-image: url("fondo_menu.jpeg");
-
-}
-/* Media Query para pantallas de teléfonos (ancho máximo de 768px) */
-@media only screen and (max-width: 768px) {
-    body {
-        font-size: 14px; /* Reduce el tamaño del texto */
-        margin: 10px; /* Margen más pequeño */
+    body::before {
+        content: "";
+        display: flex; /* Utiliza flexbox para alinear elementos */
+        flex-direction: column; /* Coloca elementos en columnas */
+        align-items: center; /* Centra horizontalmente */
+        justify-content: flex-start; /* Alinea hacia arriba para evitar superposición */
+        position: fixed;
+        z-index: -1;
     }
 
-    h1 {
-        font-size: 1.5em; /* Reduce el tamaño de los títulos */
+    .espacio {
+        flex-direction: column;
+        align-items: center;
     }
 
+    .space {
+        margin-top: 8rem;
+        margin-bottom: 4rem;
+    }
+
+    .list {
+        margin-top: 4rem;
+        margin: 0;
+        padding: 0;
+    }
 
     .container {
-        width: 100%; /* Aumenta el ancho del contenedor al 100% */
-        margin: 0; /* Elimina márgenes exteriores */
-        padding: 10px; /* Agrega un pequeño relleno interno */
+        flex-direction: row;
     }
 
-    button {
-        width: 100%; /* Botones ocupan todo el ancho */
-        padding: 15px; /* Botones más grandes para facilitar el toque en pantallas táctiles */
+    hr {
+        border: none;
+        background-color: white;
+        height: 1.5px;
+        margin-left: 3rem;
+        margin-right: 3rem;
+        text-shadow: 0 0 6px white;
     }
+
+
+    .drink-name {
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+        margin-left: 3rem;
+        font-size: 0.90rem;
+    }
+
+    .drink-price {
+        margin-bottom: 2rem;
+        margin-right: 5rem;
+        font-size: 1.10rem;
+    }
+
 }
 
-
-.edit-menu {
+footer {
     text-align: center;
-    color: RED;
-    text-shadow: 0 0 5px white;
-}
-
-.nombre {
-    text-align: left;
-    margin-left: 70px;
-    font-size: 30px;
-}
-
-.precio {
-    text-align: right;
-    margin-right: 90px;
-    font-size: 25px;
-    text-shadow: 0 0 6px white;
-}
-
-.descripcion {
-    font-size: large;
-    margin: 0 0 0 130px;
-}
-
-dt {
-    color: red;
-    text-shadow: 0 0 5px white;
-}
-
-h1 {
-    font-size: 2em;
-    color: #333;
-}
-
-
-
-.container {
-    width: 80%;
-    margin: 0 auto;
-}
-
-button {
-    padding: 10px 20px;
-    background-color: #4CAF50;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-}
-
-hr {
-    color: white;
-    margin-bottom: 30px;
-    size: 5px;
-
-}
-
-----------------------------------------------
-
-.edit-menu {
-    margin-top: 40px;
-    margin-bottom: 40px;
-    font-size: 1rem;
-    background-attachment: fixed; /* Fija el fondo para que no desaparezca al hacer scroll */
+    font-size: 1.1rem;
 }

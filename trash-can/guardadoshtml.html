@@ -1,110 +1,118 @@
-<section class="viajecito-logo">
-    <p>¡DISFRUTA EL VIAJE!<svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-beer-filled" width="32" height="32" viewBox="0 0 24 24" stroke-width="1.5" stroke="#2c3e50" fill="none" stroke-linecap="round" stroke-linejoin="round">
-        <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
-        <path d="M17 2a2 2 0 0 1 1.995 1.85l.005 .15v4c0 1.335 -.229 2.386 -.774 3.692l-.157 .363l-.31 .701a8.902 8.902 0 0 0 -.751 3.242l-.008 .377v3.625a2 2 0 0 1 -1.85 1.995l-.15 .005h-6a2 2 0 0 1 -1.995 -1.85l-.005 -.15v-3.625c0 -1.132 -.21 -2.25 -.617 -3.28l-.142 -.34l-.31 -.699c-.604 -1.358 -.883 -2.41 -.925 -3.698l-.006 -.358v-4a2 2 0 0 1 1.85 -1.995l.15 -.005h10zm0 2h-10v3h10v-3z" stroke-width="0" fill="currentColor" />
-    </svg></p>
-</section>
-html, body {
-    height: 100%;
-    margin: 0;
-    padding: 0;
-    color: white;
-    text-shadow: 0 0 10px white;
-    overflow-x: hidden; /* Previene el desbordamiento horizontal */
-}
 
-@font-face {
-    font-family: "urwgroteskscreg";
-    src: url("font/urwgroteskscreg.ttf") format("truetype");
-}
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Orlando Jorge Escobar Testa">
+    <meta name="robots" content="noindex">
+    <title>FrancoDrink's</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="font/urwgroteskscreg.ttf">
+</head>
+<body class="container">
+        <header class="espacio">
+        </header>
+                <section>
+                    <span class="space">&nbsp;</span>
+                    <ul class="list" style="list-style-type: none;"> <!-- tuve que agregarle ese estilo ahi porque en el styles no me lo tomaba y uso una lista desordenada para una mayor flexibilidad al agregarle estilos-->
+                        <li>
+                            <span class="drink-name">Daiquiri de frutilla, durazno o anana</span> <!-- usamos span para que sea mas moldeable ya que este no cuenta con saltos de lineas y permite manejar mejor el texto como uno quiera a diferencia de un div o un p que por defecto ocupan todo el ancho de pantalla-->
+                            <span class="price">$4.500</span>
+                        </li>
 
-/* Estilos para el cuerpo del documento */
-body {
-    font-family: "urwgroteskscreg", Arial, sans-serif;
-    background-image: url("fondo_menu.jpeg");
-    background-size: cover;
-    background-position: center; /* Asegura que el fondo esté centrado */
-    background-repeat: no-repeat;
-    background-attachment: fixed; /* Fija el fondo para que no desaparezca al hacer scroll */
-    font-size: 16px;
-    margin: 0;
-}
+                        <hr>
 
-.edit-menu {
-    text-align: center;
-    color: red;
-    text-shadow: 0 0 5px white;
-    font-size: 2.5rem;
-}
+                        <li>
+                            <span class="drink-name">Drink de arándanos</span>
+                            <span class="price">$4.500</span>
+                        </li>
+                                                
+                        <hr>
 
-.nombre {
-    text-align: left;
-    margin-left: 70px;
-    font-size: 1.875rem;
-    text-shadow: 0 0 5px white;
-    color: white;
-}
+                        <li>
+                            <span class="drink-name">Lemon champ</span>
+                            <span class="price">$7.000</span>
+                        </li>
+                                                
+                        <hr>
 
-.precio {
-    text-align: right;
-    margin-right: 90px;
-    font-size: 1.5625rem;
-    text-shadow: 0 0 6px white;
-}
+                        <li>
+                            <span class="drink-name">Gin tonic / Gin tonic de frutos rojos</span>
+                            <span class="price">$5.000</span>
+                        </li>
+                                                
+                        <hr>
 
-.descripcion {
-    font-size: 1.125rem;
-    margin-left: 130px;
-}
+                        <li>
+                            <span class="drink-name">Gin paff</span>
+                            <span class="price">$5.500</span>
+                        </li>    
 
-h1 {
-    font-size: 2rem;
-    color: #333;
-}
+                        <hr>
 
+                        <li>
+                            <span class="drink-name">Caipiroska / Caipiblue</span>
+                            <span class="price">$5.000</span>
+                        </li>
+                                                
+                        <hr>
 
-@media only screen and (max-width: 768px) {
-    body {
-        margin-top: 170px;
-        font-size: 14px;
-    }
+                        <li>
+                            <span class="drink-name">Destornillador</span>
+                            <span class="price">$4.500</span>
+                        </li>
 
-    hr {
-        border: none;
-        background-color: white;
-        height: 1.5px;
-        margin-left: 3rem;
-        margin-right: 3rem;
-        text-shadow: 0 0 6px white;
-    }
+                        <li>
+                            <span class="drink-name">Licor de melon</span>
+                            <span class="price">$4.500</span>
+                        </li>
+                                                
+                        <hr>
 
-    .edit-menu {
-        margin-top: 40px;
-        margin-bottom: 40px;
-        font-size: 1rem;
-        background-attachment: fixed; /* Fija el fondo para que no desaparezca al hacer scroll */
-    }
+                        <li>
+                            <span class="drink-name">VodBerry</span>
+                            <span class="price">$4.500</span>
+                        </li>
+                                                
+                        <hr>
 
-    .nombre {
-        margin-top: 1rem;
-        margin-bottom: 1rem;
-        margin-left: 3rem;
-        font-size: 0.90rem; /* Escala el tamaño de fuente en móviles */
-    }
+                        <li>
+                            <span class="drink-name">Pantera rosa</span>
+                            <span class="price">$4.500</span>
+                        </li>
+                                                
+                        <hr>
 
-    .precio {
-        margin-bottom: 2rem;
-        margin-right: 5rem;
-        font-size: 1.10rem;
-    }
+                        <li>
+                            <span class="drink-name">Fernet / Fernet de menta</span>
+                            <span class="price">$4.000</span>
+                        </li>
+                                                
+                        <hr>
 
-    .descripcion {
-        margin-left: 30px;
-        font-size: 0.90rem;
-    }
-}
+                        <li>
+                            <span class="drink-name">Gancia</span>
+                            <span class="price">$4.000</span>
+                        </li>
+                                                
+                        <hr>
 
-footer {
-    text-align: center;
-    font-size: 1.1rem;
-}
+                        <li>
+                            <span class="drink-name">Adicional de crema o gomitas</span>
+                            <span class="price">$500</span>
+                        </li>
+                    </ul>
+                </section>
+        
+        <footer>
+            <p>Pasate por nuestro instagram</p>
+
+            <a href="https://www.instagram.com/francodrinks22/" target="_blank">
+            <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="48" height="48" viewBox="0 0 48 48">
+            <radialGradient id="yOrnnhliCrdS2gy~4tD8ma_Xy10Jcu1L2Su_gr1" cx="19.38" cy="42.035" r="44.899" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#fd5"></stop><stop offset=".328" stop-color="#ff543f"></stop><stop offset=".348" stop-color="#fc5245"></stop><stop offset=".504" stop-color="#e64771"></stop><stop offset=".643" stop-color="#d53e91"></stop><stop offset=".761" stop-color="#cc39a4"></stop><stop offset=".841" stop-color="#c837ab"></stop></radialGradient><path fill="url(#yOrnnhliCrdS2gy~4tD8ma_Xy10Jcu1L2Su_gr1)" d="M34.017,41.99l-20,0.019c-4.4,0.004-8.003-3.592-8.008-7.992l-0.019-20	c-0.004-4.4,3.592-8.003,7.992-8.008l20-0.019c4.4-0.004,8.003,3.592,8.008,7.992l0.019,20	C42.014,38.383,38.417,41.986,34.017,41.99z"></path><radialGradient id="yOrnnhliCrdS2gy~4tD8mb_Xy10Jcu1L2Su_gr2" cx="11.786" cy="5.54" r="29.813" gradientTransform="matrix(1 0 0 .6663 0 1.849)" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#4168c9"></stop><stop offset=".999" stop-color="#4168c9" stop-opacity="0"></stop></radialGradient><path fill="url(#yOrnnhliCrdS2gy~4tD8mb_Xy10Jcu1L2Su_gr2)" d="M34.017,41.99l-20,0.019c-4.4,0.004-8.003-3.592-8.008-7.992l-0.019-20	c-0.004-4.4,3.592-8.003,7.992-8.008l20-0.019c4.4-0.004,8.003,3.592,8.008,7.992l0.019,20	C42.014,38.383,38.417,41.986,34.017,41.99z"></path><path fill="#fff" d="M24,31c-3.859,0-7-3.14-7-7s3.141-7,7-7s7,3.14,7,7S27.859,31,24,31z M24,19c-2.757,0-5,2.243-5,5	s2.243,5,5,5s5-2.243,5-5S26.757,19,24,19z"></path><circle cx="31.5" cy="16.5" r="1.5" fill="#fff"></circle><path fill="#fff" d="M30,37H18c-3.859,0-7-3.14-7-7V18c0-3.86,3.141-7,7-7h12c3.859,0,7,3.14,7,7v12	C37,33.86,33.859,37,30,37z M18,13c-2.757,0-5,2.243-5,5v12c0,2.757,2.243,5,5,5h12c2.757,0,5-2.243,5-5V18c0-2.757-2.243-5-5-5H18z"></path>
+            </svg></a>
+
+        </footer>
+</body>
+

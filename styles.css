@@ -3,76 +3,59 @@ html, body {
     margin: 0;
     padding: 0;
     color: white;
-    text-shadow: 0 0 10px white;
     overflow-x: hidden; /* Previene el desbordamiento horizontal */
+    background-color: #111; /* Color de fondo general */
 }
 
-@font-face {
-    font-family: "urwgroteskscreg";
-    src: url("font/urwgroteskscreg.ttf") format("truetype");
-}
+@media (max-width: 768px) {
 
-/* Estilos para el cuerpo del documento */
-body {
-    font-family: "urwgroteskscreg", Arial, sans-serif;
-    background-image: url("images/fondo/fondo_menu.jpeg");
-    background-size: cover;
-    background-position: center; /* Asegura que el fondo esté centrado */
-    background-repeat: no-repeat;
-    background-attachment: fixed; /* Fija el fondo para que no desaparezca al hacer scroll */
-    font-size: 16px;
-    margin: 0;
+    @font-face {
+        font-family: "urwgroteskscreg";
+        src: url("font/urwgroteskscreg.ttf") format("truetype");
+    }
 
-}
+    body {
+        font-family: "urwgroteskscreg", Arial, sans-serif;
+        background-image: url("images/fondo/fondo_menu.jpeg");
+        background-size: cover;
+        background-position: center; /* Asegura que el fondo esté centrado */
+        background-repeat: no-repeat;
+        background-attachment: fixed; /* Fija el fondo para que no desaparezca al hacer scroll */
+        font-size: 1rem; /* Equivalente a 16px */
+        margin: 0;
+    }
 
-
-@media (min-width: 480px) and (max-width: 768px) {
-    
-    body::before {
-        content: "";
+    .header {
+        height: 6.25rem; /* Ajusta según el tamaño de tu logo (100px) */
         display: flex; /* Utiliza flexbox para alinear elementos */
-        flex-direction: column; /* Coloca elementos en columnas */
-        align-items: center; /* Centra horizontalmente */
-        justify-content: flex-start; /* Alinea hacia arriba para evitar superposición */
-        position: fixed;
-        z-index: -1;
+        justify-content: center; /* Centra horizontalmente el contenido del header */
+        align-items: center; /* Centra verticalmente el contenido del header */
+        margin-bottom: 1.25rem; /* Espacio debajo del header (20px) */
     }
 
     .list {
-        margin: 0;
-        padding: 0;
+        margin-top: 2.5rem; /* Espacio hacia abajo de la lista (40px) */
+        padding: 0; /* Elimina relleno de la lista */
+        list-style-type: none; /* Quita los puntos de la lista */
     }
 
-    .container {
-        flex-direction: row;
+    .list li {
+        display: flex; /* Utiliza flexbox para la alineación de los elementos de la lista */
+        justify-content: space-between; /* Espacio entre el nombre de la bebida y el precio */
+        align-items: center; /* Alinea verticalmente los elementos en el centro */
+        padding: 0.625rem 0; /* Espaciado vertical entre los ítems (10px) */
     }
 
     hr {
-        border: none;
-        background-color: white;
-        height: 1.5px;
-        margin-left: 3rem;
-        margin-right: 3rem;
-        text-shadow: 0 0 6px white;
+        border: none; /* Quita el borde predeterminado */
+        border-top: 1px solid #444; /* Borde superior de la línea horizontal */
+        margin: 0.625rem 0; /* Margen vertical de la línea horizontal (10px) */
     }
 
-
-    .drink-name {
-        margin-top: 1rem;
-        margin-bottom: 1rem;
-        margin-left: 3rem;
-        font-size: 0.90rem;
+    footer {
+        text-align: center; /* Centra el texto del footer */
+        font-size: 1.1rem; /* Tamaño de fuente del footer */
+        margin-top: 1.25rem; /* Espacio superior del footer (20px) */
     }
 
-    .drink-price {
-        margin-bottom: 2rem;
-        margin-right: 5rem;
-        font-size: 1.10rem;
-    }
-
-}
-
-footer {
-    text-align: center;
-    font-size: 1.1rem;
 }
