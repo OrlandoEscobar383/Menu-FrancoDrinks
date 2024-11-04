@@ -57,7 +57,7 @@ h1 {
 }
 
 
-@media (max-width: 768px) {
+@media (min-width: 480px) and (max-width: 768px) {
     
     body {
         margin-top: 5.2rem;
