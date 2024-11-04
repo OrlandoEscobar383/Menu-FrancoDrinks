@@ -22,25 +22,29 @@ body {
     background-attachment: fixed; /* Fija el fondo para que no desaparezca al hacer scroll */
     font-size: 16px;
     margin: 0;
+
 }
 
 
 @media (min-width: 480px) and (max-width: 768px) {
     
-    body {
-        margin-top: 5.2rem;
-        font-size: 14px;
-        background-attachment: fixed
+    body::before {
+        content: "";
+        display: flex; /* Utiliza flexbox para alinear elementos */
+        flex-direction: column; /* Coloca elementos en columnas */
+        align-items: center; /* Centra horizontalmente */
+        justify-content: flex-start; /* Alinea hacia arriba para evitar superposición */
+        position: fixed;
+        z-index: -1;
     }
 
     .list {
-        list-style-type: none;
+        margin: 0;
         padding: 0;
     }
+
     .container {
-        display: flex;
         flex-direction: row;
-        justify-content: center;
     }
 
     hr {
