@@ -67,7 +67,7 @@ html, body {
         gap: 10px;
     }
 
-    footer a {
+    footer img {
         width: 30%;
         max-width: 6,25rem;
         border-radius: 4px;
@@ -76,7 +76,7 @@ html, body {
 
 /* Ajustes para pantallas pequeñas */
 @media (max-width: 480px) {
-    .footer-images img {
+    .container_2 img {
       width: 45%; /* Ajuste a 2 imágenes por fila en móviles */
     }
 }
