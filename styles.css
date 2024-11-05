@@ -4,7 +4,7 @@ html, body {
     padding: 0;
     color: white;
     overflow-x: hidden; /* Previene el desbordamiento horizontal */
-    background-color: url(images/fondo/fondo_menu.jpeg); /* Color de fondo general */
+    background-color: transparent; /* Color de fondo general */
 }
 
 @media (max-width: 768px) {
