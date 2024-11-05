@@ -77,6 +77,6 @@ html, body {
 /* Ajustes para pantallas pequeñas */
 @media (max-width: 480px) {
     .container_2 img {
-      width: 45%; /* Ajuste a 2 imágenes por fila en móviles */
+      width: 30%; /* Ajuste a 2 imágenes por fila en móviles */
     }
 }
