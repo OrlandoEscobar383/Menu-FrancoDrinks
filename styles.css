@@ -57,12 +57,26 @@ html, body {
     }
 
     footer {
+        text-align: center;
+        font-size: 1.1rem;
+        margin-top: 1.25rem;
+        text-shadow: 0 0 6px white;
         display: flex;
-        height: 100%;
-        width: 100%;
         flex-wrap: wrap;
-        flex-direction: row;
+        justify-content: center;
         gap: 10px;
     }
 
+    footer img {
+        width: 30%;
+        max-width: 6,25rem;
+        border-radius: 8px;
+    }
+}
+
+/* Ajustes para pantallas pequeñas */
+@media (max-width: 480px) {
+    .footer-images img {
+      width: 45%; /* Ajuste a 2 imágenes por fila en móviles */
+    }
 }
