@@ -73,10 +73,11 @@ html, body {
         max-width: 6,25rem;
         border-radius: 4px;
         object-fit: cover;
+        transition: transform 0.5s ease-in-out;
     }
 }
 
-#slider {
+/*#slider {
     aspect-ratio: 10 / 16;
     width: 300px;
     position: relative;
@@ -84,7 +85,7 @@ html, body {
     overflow: scroll;
     scroll-snap-type: x mandatory;
 }
-
+                                            probando un slider para las imagenes
 #slider img {
     width: 100%;
     left: 0;
@@ -93,7 +94,7 @@ html, body {
     border-radius: 5px;
     scroll-snap-align: center;
 }
-
+*/
 /* Ajustes para pantallas pequeñas */
 @media (max-width: 480px) {
     .container img {
