@@ -69,32 +69,60 @@ html, body {
 
     footer img {
         height: 50%;
-        width: 70%;
+        
         max-width: 6,25rem;
         border-radius: 4px;
         object-fit: cover;
-        transition: transform 0.5s ease-in-out;
+    }
+}
+/* Contenedor del slider */
+#slider {
+    width: 100%; /* Ocupa todo el ancho disponible */
+    overflow-x: auto; /* Habilita el desplazamiento horizontal */
+    scroll-snap-type: x mandatory; /* Ajusta el desplazamiento al centro */
+    display: flex; /* Usa flexbox para alinear elementos */
+    justify-content: center; /* Centra el contenido */
+    padding: 10px 0; /* Espaciado arriba y abajo */
+    scrollbar-width: none; /* Oculta la barra de desplazamiento en Firefox */
+    transition-duration: 5s;
+}
+
+#slider::-webkit-scrollbar {
+    display: none; /* Oculta la barra de desplazamiento en navegadores basados en WebKit */
+}
+
+/* Lista dentro del slider */
+#slider ul {
+    display: flex; /* Alinea las imágenes horizontalmente */
+    gap: 10px; /* Espaciado entre elementos */
+    list-style: none; /* Elimina los estilos de lista */
+    padding: 0;
+    margin: 0;
+}
+
+/* Cada elemento de la lista */
+#slider ul li {
+    flex: 0 0 auto; /* Evita que se redimensionen automáticamente */
+    scroll-snap-align: center; /* Centra cada elemento al deslizar */
+}
+
+/* Imágenes */
+#slider img {
+    width: 200px; /* Ajusta el ancho */
+    height: auto; /* Mantén las proporciones */
+    border-radius: 5px; /* Bordes redondeados */
+    object-fit: cover; /* Asegura que las imágenes se vean bien dentro del espacio */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Agrega sombra para diseño */
+}
+
+/* Estilos responsivos */
+@media (max-width: 480px) {
+    #slider img {
+        width: 150px; /* Imágenes más pequeñas en pantallas pequeñas */
     }
 }
 
-/*#slider {
-    aspect-ratio: 10 / 16;
-    width: 300px;
-    position: relative;
-    display: flex;
-    overflow: scroll;
-    scroll-snap-type: x mandatory;
-}
-                                            probando un slider para las imagenes
-#slider img {
-    width: 100%;
-    left: 0;
-    position: sticky;
-    object-fit: cover;
-    border-radius: 5px;
-    scroll-snap-align: center;
-}
-*/
+
 /* Ajustes para pantallas pequeñas */
 @media (max-width: 480px) {
     .container img {
