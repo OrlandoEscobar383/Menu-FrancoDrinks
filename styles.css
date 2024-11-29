@@ -75,22 +75,21 @@ html, body {
         object-fit: cover;
     }
 }
-/* Estilo principal del slider */
+
 #slider {
     width: 100%;
-    overflow: hidden; /* Oculta contenido que sale del contenedor */
+    overflow: hidden; 
     position: relative;
 }
 
-/* Lista del slider */
+
 #slider ul {
     display: flex;
-    animation: scroll 25s linear infinite; /* Animación para el desplazamiento */
+    animation: scroll 10s linear infinite; /* animacion de desplazamiento */
     margin: 0;
     padding: 0;
     list-style: none;
     gap: 10px;
-    cursor: grab; /* Indica que es interactivo */
 }
 
 /* Elementos individuales */
@@ -104,23 +103,23 @@ html, body {
     height: 90%;
     object-fit: cover;
     border-radius: 5px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 2);
+    box-shadow: 0 4px 6px rgba(0.5, 0.5, 0.5, 0.5);
 }
 
 /* Animación de desplazamiento automático */
 @keyframes scroll {
     0% {
-        transform: translateX(0);
+        transform: translateX(5%);
     }
     100% {
-        transform: translateX(-100%);
+        transform: translateX(-50%);
     }
 }
 
-/* Detener la animación al pasar el mouse */
+/* Detener la animación al pasar el mouse 
 #slider ul:hover {
     animation-play-state: paused;
-}
+}*/
 
 /* Ajustes responsivos */
 @media (max-width: 480px) {
