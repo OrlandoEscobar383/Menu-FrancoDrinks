@@ -85,7 +85,7 @@ html, body {
 /* Lista del slider */
 #slider ul {
     display: flex;
-    animation: scroll 10s linear infinite; /* Animación para el desplazamiento */
+    animation: scroll 25s linear infinite; /* Animación para el desplazamiento */
     margin: 0;
     padding: 0;
     list-style: none;
@@ -101,10 +101,10 @@ html, body {
 /* Imágenes */
 #slider img {
     width: 200px;
-    height: auto;
+    height: 90%;
     object-fit: cover;
     border-radius: 5px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 2);
 }
 
 /* Animación de desplazamiento automático */
