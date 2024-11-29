@@ -75,52 +75,60 @@ html, body {
         object-fit: cover;
     }
 }
-/* Contenedor del slider */
+/* Estilo principal del slider */
 #slider {
-    width: 100%; /* Ocupa todo el ancho disponible */
-    overflow-x: auto; /* Habilita el desplazamiento horizontal */
-    scroll-snap-type: x mandatory; /* Ajusta el desplazamiento al centro */
-    display: flex; /* Usa flexbox para alinear elementos */
-    justify-content: center; /* Centra el contenido */
-    padding: 10px 0; /* Espaciado arriba y abajo */
-    scrollbar-width: none; /* Oculta la barra de desplazamiento en Firefox */
-    transition-duration: 5s;
+    width: 100%;
+    overflow: hidden; /* Oculta contenido que sale del contenedor */
+    position: relative;
 }
 
-#slider::-webkit-scrollbar {
-    display: none; /* Oculta la barra de desplazamiento en navegadores basados en WebKit */
-}
-
-/* Lista dentro del slider */
+/* Lista del slider */
 #slider ul {
-    display: flex; /* Alinea las imágenes horizontalmente */
-    gap: 10px; /* Espaciado entre elementos */
-    list-style: none; /* Elimina los estilos de lista */
-    padding: 0;
+    display: flex;
+    animation: scroll 10s linear infinite; /* Animación para el desplazamiento */
     margin: 0;
+    padding: 0;
+    list-style: none;
+    gap: 10px;
+    cursor: grab; /* Indica que es interactivo */
 }
 
-/* Cada elemento de la lista */
+/* Elementos individuales */
 #slider ul li {
-    flex: 0 0 auto; /* Evita que se redimensionen automáticamente */
-    scroll-snap-align: center; /* Centra cada elemento al deslizar */
+    flex: 0 0 auto;
 }
 
 /* Imágenes */
 #slider img {
-    width: 200px; /* Ajusta el ancho */
-    height: auto; /* Mantén las proporciones */
-    border-radius: 5px; /* Bordes redondeados */
-    object-fit: cover; /* Asegura que las imágenes se vean bien dentro del espacio */
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Agrega sombra para diseño */
+    width: 200px;
+    height: auto;
+    object-fit: cover;
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
 }
 
-/* Estilos responsivos */
-@media (max-width: 480px) {
-    #slider img {
-        width: 150px; /* Imágenes más pequeñas en pantallas pequeñas */
+/* Animación de desplazamiento automático */
+@keyframes scroll {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-100%);
     }
 }
+
+/* Detener la animación al pasar el mouse */
+#slider ul:hover {
+    animation-play-state: paused;
+}
+
+/* Ajustes responsivos */
+@media (max-width: 480px) {
+    #slider img {
+        width: 150px;
+    }
+}
+
 
 
 /* Ajustes para pantallas pequeñas */
