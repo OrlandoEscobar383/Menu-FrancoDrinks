@@ -78,32 +78,42 @@ html, body {
 
 #slider {
     width: 100%;
-    overflow-x: auto; /* Habilitar desplazamiento horizontal */
-    scroll-snap-type: x mandatory; /* Desplazamiento suave alineado */
-    -webkit-overflow-scrolling: touch; /* Suavidad para dispositivos iOS */
+    overflow: hidden; /* Oculta las imágenes fuera del área visible */
     position: relative;
-    display: flex;
-    gap: 20px; /* Espacio entre imágenes */
-    padding: 10px 0; /* Opcional: espacio alrededor del slider */
 }
 
 #slider ul {
     display: flex;
+    animation: scroll 50s linear infinite; /* Animación continua */
     margin: 0;
     padding: 0;
+    gap: 10px;
     list-style: none;
-    gap: 10px; /* Espacio entre imágenes */
 }
 
 #slider ul li {
-    flex: 0 0 auto;
-    scroll-snap-align: center; /* Las imágenes se alinean al centro al detenerse */
+    flex: 0 0 auto; /* Evita que los elementos se redimensionen */
 }
 
 #slider img {
-    width: 200px;
+    width: 150px;
     height: 90%;
     object-fit: cover;
     border-radius: 5px;
-    box-shadow: 0 4px 6px rgba(0.5, 0.5, 0.5, 0.5);
+    box-shadow: 4px rgba(0, 0, 0, 0.2);
+}
+
+/* Animación de desplazamiento automático */
+@keyframes scroll {
+    0% {
+        transform: translateX(50%); /* Empieza en el punto inicial */
+    }
+    100% {
+        transform: translateX(-100% + 10px); /* Desplaza la mitad del ancho total */
+    }
+}
+
+/* Detener la animación al pasar el mouse */
+#slider ul:hover {
+    animation-play-state: paused;
 }
