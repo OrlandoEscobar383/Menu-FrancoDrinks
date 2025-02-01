@@ -83,7 +83,7 @@ html, body {
 
 #slider ul {
     display: flex;
-    animation: scroll 40s linear infinite; /* Animación continua */
+    animation: scroll 65s linear infinite; /* Animación continua */
     margin: 0;
     padding: 0;
     gap: 10px;
