@@ -1,1 +1,1 @@
-*Pagina web estatica dirigida unicamnete a dispositivos moviles*
+*Pagina web estatica dirigida unicamente a dispositivos moviles*
